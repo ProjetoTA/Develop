@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{1C782B3E-BFE4-4EC9-9857-D5DE45BCD572}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D0FD4A54-8882-46E7-BB8F-80A0810790E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetTA", "Backend\src\PetTA\PetTA.csproj", "{BFC82742-8ABB-4B0B-8D42-A4D68196763E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFC82742-8ABB-4B0B-8D42-A4D68196763E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC82742-8ABB-4B0B-8D42-A4D68196763E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC82742-8ABB-4B0B-8D42-A4D68196763E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC82742-8ABB-4B0B-8D42-A4D68196763E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0FD4A54-8882-46E7-BB8F-80A0810790E5} = {1C782B3E-BFE4-4EC9-9857-D5DE45BCD572}
+		{BFC82742-8ABB-4B0B-8D42-A4D68196763E} = {D0FD4A54-8882-46E7-BB8F-80A0810790E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B9C313E-1695-424E-BCF1-4A1863D6590C}
+	EndGlobalSection
+EndGlobal

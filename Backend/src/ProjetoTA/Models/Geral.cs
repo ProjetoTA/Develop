@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Backend
+namespace ProjetoTA.Models
 {
-    public class teste back
+    public class Geral
     {
-        
+        public string exemplo { get; set; }
     }
 }
