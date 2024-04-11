@@ -1,55 +1,144 @@
 
-input{
-  position: absolute;
-  border-radius:10px ;
-  outline: none;
-  padding: 0 40px;
-  line-height: 40px;
-  border: 2px solid #f0ffff;
-  background:transparent;
-  z-index: 111;
-  font-size: 15px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-label{
-  position: absolute;
-  font-size: 16px;
-  color:#f0ffff ;
-  margin:0 16px;
-  padding: 0 13px;
-  padding-top: 2px;
-  background-color: #cdb8f9;
-  transition: .3s ease;
-}
-
-.itens{
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
   position: relative;
-  height: 50px;
-  line-height: 35px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Montserrat;
 }
 
-input:focus, input:valid{
-  color: #814ee7;
-  border: 3px solid #814ee7;
-  padding-bottom: 0px;
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
-input:focus + label,
-input:valid + label{
-color: #814ee7;
-font-size: 13.5px;
-height: 15;
-padding: 0 7px;
-line-height: 3px;
-transform: translate(-15, -16) scale (0.88);
-z-index: 1111;
+.title::before {
+  width: 18px;
+  height: 18px;
 }
 
-.btnEdit{
-  margin-left: 71%;
-  margin-right: 1%;
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
 }
 
-.all{
-  margin-top: 140px;
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: white;
+}
+
+.message,
+.signin {
+  font-size: 14.5px;
+  color: white;
+  font-weight: 600;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline white;
+}
+
+.signin a {
+  color: white;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.form label .input + span {
+  color: white;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 13px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #cdb8f9;
+  top: -12px;
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: #814ee7;
+  padding: 5px;
+  padding-top: 0;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
 }

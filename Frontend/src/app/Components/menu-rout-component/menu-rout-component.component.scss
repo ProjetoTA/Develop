@@ -1,18 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
-nav a{
-font-family:'Montserrat';
-translate: no;
+* {
+  font-family: "Montserrat";
+}
+nav a {
+  font-family: "Montserrat";
+  translate: no;
 }
 
-nav{
-margin-bottom: 50px;
+nav {
+  margin-bottom: 50px;
 }
 
-.pesq{
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  width: 55%;
+  margin: 3px 0;
+}
 
-  border-radius: 50px;
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  color: #282828;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 100%;
+  transition: all ease-in-out 0.5s;
+}
+
+.search__input:hover,
+.search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #ccc;
+}
+
+.search__button {
+  border: none;
+  margin-top: 0.1em;
+  background: transparent;
+  color: white;
+}
+
+.search__button:hover {
+  cursor: pointer;
 }

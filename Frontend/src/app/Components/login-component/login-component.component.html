@@ -1,1 +1,30 @@
-<p>login-component works!</p>
+
+<app-menu-rout-component></app-menu-rout-component>
+<div class="container">
+  <div class="hero">
+    <form action="" class="form">
+      <div class="logo" translate="no">Pet Care</div>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required=""
+        class="input"
+        placeholder="Email:"
+      />
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        required=""
+        class="input"
+        placeholder="Senha:"
+      />
+      <input type="submit" value="Conectar" class="input submit" *ngFor="let item of items; let i=index" />
+      <p class="forgotten">
+        Não tem uma conta ainda? <a href="#" class="text-info" routerLink="cadUsu" routerLinkActive="active">Cadastre-se agr clicando aqui.</a>
+      </p>
+
+    </form>
+  </div>
+</div>
