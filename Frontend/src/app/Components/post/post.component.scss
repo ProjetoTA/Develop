@@ -1,0 +1,109 @@
+$unit-size: 75px;
+
+.post-main{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+        
+    .post-top{
+            
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+
+        padding-bottom: 25px;
+        padding-top: 25px;
+
+        .post-profile-photo{
+
+            background: gray;
+            width: 75px;
+            height: 75px;
+        }
+        
+        .post-name{
+
+            // background: blueviolet;
+            width: calc(75px * 8);
+            height: 75px;
+
+            .post-user-name{
+
+                height: 38px;
+                line-height: 38px;
+                text-align: left;
+                // background: greenyellow;
+
+                
+            }.post-pet-names{
+
+                height: 37px;
+                line-height: 37px;
+                text-align: left;
+            }
+
+            .user-name, .pet-names{
+
+                font-size: 18px;
+            }
+            .user-name{
+
+                font-weight: bold;
+            }
+        }
+
+        .post-options{
+            background: gray;
+            width: 75px;
+            height: 75px;
+        }
+    }
+
+    .post-message{
+
+        width: calc(75px * 8);
+    }
+
+    .post-image{
+
+        width: calc(75px * 8);
+        height: calc(75px * 6);
+        border: 2px solid gray;
+    }
+
+    .post-bottom{
+
+        width: calc(75px * 8);
+        height: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        background: gray;
+
+        display: flex;
+        align-items: right;
+        flex-direction: row;
+        justify-content: right;
+
+        .post-button{
+
+            cursor: pointer;
+            // padding: 12px 35px;
+            width: 70px;
+            height: 50px;
+            margin-right: 3px;
+            margin-left: 3px;
+        }
+    }
+
+    .post-line{
+
+        width: calc(75px * 12);
+        padding: 0%;
+        border: 2px solid gray;
+    }
+
+}
