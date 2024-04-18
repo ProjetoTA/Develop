@@ -35,9 +35,10 @@
   background-color: inherit;
   color: rgb(161, 161, 161);
   font-size: inherit;
+  border: solid 1px #ebeaed ;
 }
 
-.submit , .btn {
+.submit  {
   margin-top: 20px;
   font-weight: bold;
   box-shadow: -1px -1px 5px white, 3px 3px 5px rgba(209, 209, 209, 0.705);
@@ -45,10 +46,6 @@
   cursor: pointer;
 }
 
-.btn {
-  text-align: center;
-  color: black;
-}
 
 .logo {
   font-size: 3rem;
@@ -104,3 +101,5 @@ a {
   margin-top: 15px;
   font-size: 1rem;
 }
+
+

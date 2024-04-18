@@ -20,10 +20,13 @@
         class="input"
         placeholder="Senha:"
       />
-      <input type="submit" value="Conectar" class="input submit" *ngFor="let item of items; let i=index" />
+      <input type="submit" value="Conectar" class="input submit" *ngFor="let item of items; let i=index"/>
       <p class="forgotten">
         Não tem uma conta ainda? <a href="#" class="text-info" routerLink="cadUsu" routerLinkActive="active">Cadastre-se agr clicando aqui.</a>
       </p>
+      <br>
+      <input class="btn btn-outline-primary" value="Entrar" routerLink="feed" routerLinkActive="active"/>
+
 
     </form>
   </div>

@@ -1,1 +1,71 @@
-<p>feed-component works!</p>
+<app-menu-rout-component></app-menu-rout-component>
+<div class="container">
+  <div class="sidebar">
+      <div class="user-info">
+          <img src="https://source.unsplash.com/random/100x100" alt="User">
+          <h4 class="text-light">Mariana Perez</h4>
+          <p class="text-light">&commat;MariPerez</p>
+      </div>
+      <div class="pets">
+          <h4 class="text-light">Meus Pet's</h4>
+          <img src="https://source.unsplash.com/random/400x300/?dog" alt="Pet">
+          <img src="https://source.unsplash.com/random/400x300/?cat" alt="Pet">
+          <img src="https://source.unsplash.com/random/400x300/?bird" alt="Pet">
+      </div>
+      <div class="amigos">
+        <h4 class="text-light tittleAmigos">Amigos</h4>
+        <h6 class="usuAmigos text-light">&commat;usuario</h6>
+        <h6 class="usuAmigos text-light">&commat;usuario</h6>
+        <h6 class="usuAmigos text-light">&commat;usuario</h6>
+        <h6 class="usuAmigos text-light">&commat;usuario</h6>
+        <h6 class="usuAmigos text-light">&commat;usuario</h6>
+    </div>
+  </div>
+  <div class="posts">
+    <div class="new-post">
+      <h4 class="text-primary">Novo Post</h4>
+      <form action="#" method="post">
+        <div class="inputbox">
+          <input required="required" name="title" type="text">
+          <span>Titulo</span>
+          <i></i>
+        </div>
+          <textarea name="content" id="content" cols="30" rows="5" placeholder="Content" required></textarea>
+          <div class="mb-3">
+            <label for="formFile" class="form-label text-info">Carregue uma foto</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <input type="submit" name="postar" class="postar btn btn-outline-primary" value="Publicar"/>
+      </form>
+  </div>
+      <div class="post">
+        <h6 class="text-info">Usuario</h6>
+          <h4 class="text-primary">Titulo aleatorio</h4>
+          <h1 class="text-primary"> </h1>
+          <img src="https://source.unsplash.com/random/800x600" alt="Post">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo, velit et pharetra rhoncus, mi lacus venenatis nisl, vel aliquet lorem nisi et sapien.</p>
+          <div class="post-actions">
+              <button>Gos</button>
+              <button>Comentar</button>
+          </div>
+          <div class="comments">
+              <p class="text-primary">Comentários</p>
+              <ul>
+                  <li>
+                      <p>User 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <button>Reply</button>
+                  </li>
+                  <li>
+                      <p>User 2: Sed commodo, velit et pharetra rhoncus, mi lacus venenatis nisl.</p>
+                      <button>Compartilhar</button>
+                  </li>
+              </ul>
+              <form>
+                  <input type="text" placeholder="Your name" required>
+                  <textarea placeholder="Your comment" required></textarea>
+                  <button type="submit">Comment</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
