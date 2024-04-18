@@ -6,9 +6,9 @@ $unit-size: 75px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-        
+
     .post-top{
-            
+
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -23,7 +23,7 @@ $unit-size: 75px;
             width: 75px;
             height: 75px;
         }
-        
+
         .post-name{
 
             // background: blueviolet;
@@ -37,7 +37,7 @@ $unit-size: 75px;
                 text-align: left;
                 // background: greenyellow;
 
-                
+
             }.post-pet-names{
 
                 height: 37px;
@@ -96,6 +96,13 @@ $unit-size: 75px;
             height: 50px;
             margin-right: 3px;
             margin-left: 3px;
+            outline: none;
+            background-color: transparent;
+            border: none;
+
+            .like{
+              font-size: 30PX;
+            }
         }
     }
 
@@ -105,5 +112,4 @@ $unit-size: 75px;
         padding: 0%;
         border: 2px solid gray;
     }
-
 }

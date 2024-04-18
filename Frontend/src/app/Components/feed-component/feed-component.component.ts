@@ -1,27 +1,17 @@
+
 import { NgbModal, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-import { MenuRoutComponentComponent } from "../menu-rout-component/menu-rout-component.component";
-
-
-@Component({
-    selector: 'app-feed-component',
-    standalone: true,
-    templateUrl: './feed-component.component.html',
-    styleUrl: './feed-component.component.scss',
-    imports: [NgbModalModule, MenuRoutComponentComponent, MenuRoutComponentComponent]
-=======
 import { PostComponent } from '../post/post.component';
 import { MenuRoutComponentComponent } from '../menu-rout-component/menu-rout-component.component';
+import { PerfilComponentComponent } from '../perfil-component/perfil-component.component';
 
 
 @Component({
   selector: 'app-feed-component',
   standalone: true,
-  imports: [NgbModalModule, PostComponent, MenuRoutComponentComponent],
+  imports: [NgbModalModule, PostComponent, MenuRoutComponentComponent,PerfilComponentComponent],
   templateUrl: './feed-component.component.html',
   styleUrl: './feed-component.component.scss'
->>>>>>> a347d86327abf1b90af464c04533a30b1655864d
 })
 export class FeedComponentComponent {
 
