@@ -1,0 +1,52 @@
+
+.feed-page{
+
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    background: gray;
+
+    .feed-left{
+        width: 33%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        // justify-content: center;
+        
+        // position: absolute;
+        top: 0px; /* Header Height */
+        bottom: 0px; /* Footer Height */
+        left: 0px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        // width: 100%;
+
+        // position: relative;
+
+        .feed-profile{
+            
+            background: white;
+            margin-left: calc((100% / 8) * 1.5);
+            margin-top: 75px;
+            width: calc((100% / 8) * 6.5);
+        }
+    }
+
+    .feed-feed{
+        width: 66%;
+        border: 0;
+        margin: 0;
+        padding: 0;
+
+        background: cyan;
+    }
+
+}

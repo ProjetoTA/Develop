@@ -1,11 +1,13 @@
 import { NgbModal, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { Component } from '@angular/core';
+import { PostComponent } from '../post/post.component';
+import { MenuRoutComponentComponent } from '../menu-rout-component/menu-rout-component.component';
 
 
 @Component({
   selector: 'app-feed-component',
   standalone: true,
-  imports: [NgbModalModule],
+  imports: [NgbModalModule, PostComponent, MenuRoutComponentComponent],
   templateUrl: './feed-component.component.html',
   styleUrl: './feed-component.component.scss'
 })
