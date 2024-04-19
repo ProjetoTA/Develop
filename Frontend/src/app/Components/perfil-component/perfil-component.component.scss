@@ -1,28 +1,91 @@
-.feed-left{
-  width: 33%;
-  height: 100%;
-  background: gray;
+
+.feed-profile{
+
   display: flex;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
 
-  // justify-content: center;
+  background: white;
+  // left: calc((100vw / 24) * 1.5);
+  // margin-top: 75px;
+  margin-top: calc(100vw / 24);
+  margin-left: auto; 
+  margin-right: 0;
+  // width: calc((100% / 8) * 6.5);
+  width: calc((100vw / 24) * 6.5);
+  
+  position: relative;
+  top:0;
+  right:0;
 
-  // position: absolute;
-  top: 0px; /* Header Height */
-  bottom: 0px; /* Footer Height */
-  left: 0px;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  // width: 100%;
 
-  // position: relative;
+  
+  .profile-user{
 
-  .feed-profile{
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+
+    margin-bottom: calc((100vw / 24) * 0.25);
+
+    .profile-user-photo{
+
+      width: calc((100vw / 24) * 1.5);
+      height: calc((100vw / 24) * 1.5);
+
+      background-color: gold;
+    }
+
+    .profile-names{
+
       display: flex;
-      background: white;
-      margin-left: calc((100% / 8) * 1.5);
-      margin-top: 75px;
-      width: calc((100% / 8) * 6.5);
+      align-items: start;
+      flex-direction: column;
+
+      .profile-user-name, .profile-user-username{
+
+        height: calc((100vw / 24) * 0.75);
+        line-height: calc((100vw / 24) * 0.75);
+        align-items: center;
+
+        text-align: left;
+
+        margin-left: calc((100vw / 24) * 0.5);;
+
+        // left: 0;
+        // right: auto;
+      }
+      .profile-user-name{
+
+        background-color: brown;
+      }
+
+      .profile-user-username{
+
+        background-color: coral;
+      }
+    }
   }
+
+  .profile-pet{
+    
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+
+    .profile-pet-photo{
+
+      width: calc((100vw / 24) * 1.5);
+      height: calc((100vw / 24) * 0.75);
+    }
+
+    .profile-pet-name{
+
+      height: calc((100vw / 24) * 0.75);
+      line-height: calc((100vw / 24) * 0.75);
+      align-items: center;
+    }
+  }
+
 }
+

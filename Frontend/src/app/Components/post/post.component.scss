@@ -6,6 +6,9 @@ $unit-size: 75px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    // background: red;
+    // margin-left: 33%;
 
     .post-top{
 
@@ -14,72 +17,70 @@ $unit-size: 75px;
         flex-direction: row;
         justify-content: center;
 
-        padding-bottom: 25px;
-        padding-top: 25px;
+        height: calc(100vw / 24);
+
+        margin-top: calc((100vw / 24) / 3);
+        margin-bottom: calc((100vw / 24) / 3);
 
         .post-profile-photo{
 
             background: gray;
-            width: 75px;
-            height: 75px;
+            width: calc(100vw / 24);
+            height: calc(100vw / 24);
         }
 
         .post-name{
 
             // background: blueviolet;
-            width: calc(75px * 8);
-            height: 75px;
+            width: calc((100vw / 24) * 8);
+            height: calc(100vw / 24);
 
-            .post-user-name{
+            // align-items: start;
 
-                height: 38px;
-                line-height: 38px;
-                text-align: left;
-                // background: greenyellow;
+            .post-user-name, .post-pet-names{
 
-
-            }.post-pet-names{
-
-                height: 37px;
-                line-height: 37px;
+                height: calc((100vw / 24) / 2);
+                line-height: calc((100vw / 24) / 2);
                 text-align: left;
             }
 
-            .user-name, .pet-names{
-
-                font-size: 18px;
-            }
             .user-name{
 
+                font-size: 16px;
                 font-weight: bold;
+            }
+            .pet-names{
+
+                font-size: 15px;
             }
         }
 
         .post-options{
             background: gray;
-            width: 75px;
-            height: 75px;
+            width: calc(100vw / 24);
+            height: calc(100vw / 24);
         }
     }
 
     .post-message{
 
-        width: calc(75px * 8);
+        width: calc((100vw / 24) * 8);
+        font-size: 15px;
     }
 
     .post-image{
 
-        width: calc(75px * 8);
-        height: calc(75px * 6);
+        width: calc((100vw / 24) * 8);
+        height: calc((100vw / 24) * 6);
         border: 2px solid gray;
     }
 
     .post-bottom{
 
-        width: calc(75px * 8);
-        height: 60px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        width: calc((100vw / 24) * 8);
+        height: calc(100vw / 24);
+        padding-top: calc((100vw / 24) / 9);
+        padding-bottom: calc((100vw / 24) / 9);
 
         background: gray;
 
@@ -92,10 +93,10 @@ $unit-size: 75px;
 
             cursor: pointer;
             // padding: 12px 35px;
-            width: 70px;
-            height: 50px;
-            margin-right: 3px;
-            margin-left: 3px;
+            width: calc((100vw / 24) * 0.9);
+            height: calc((100vw / 24) / 3);
+            margin-right: calc((100vw / 24) * 0.05);
+            margin-left: calc((100vw / 24) * 0.05);
             outline: none;
             background-color: transparent;
             border: none;
@@ -108,7 +109,7 @@ $unit-size: 75px;
 
     .post-line{
 
-        width: calc(75px * 12);
+        width: calc((100vw / 24) * 12);
         padding: 0%;
         border: 2px solid gray;
     }
