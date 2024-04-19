@@ -26,7 +26,7 @@
     align-items: start;
     flex-direction: row;
 
-    margin-bottom: calc((100vw / 24) * 0.25);
+    margin-bottom: calc((100vw / 24) * 0.2);
 
     .profile-user-photo{
 
@@ -46,7 +46,7 @@
 
         height: calc((100vw / 24) * 0.75);
         line-height: calc((100vw / 24) * 0.75);
-        align-items: center;
+        // align-items: center;
 
         text-align: left;
 
@@ -57,10 +57,15 @@
       }
       .profile-user-name{
 
+        font-weight: bold;
+        font-size: 18px;
+
         background-color: brown;
       }
 
       .profile-user-username{
+
+        font-size: 16px;
 
         background-color: coral;
       }
@@ -77,13 +82,66 @@
 
       width: calc((100vw / 24) * 1.5);
       height: calc((100vw / 24) * 0.75);
+
+      background-color: darkslategray;
     }
 
-    .profile-pet-name{
+    .profile-pet-right{
+      
+      // display: flex;
+      // align-items: start;
+      // flex-direction: column;
 
-      height: calc((100vw / 24) * 0.75);
-      line-height: calc((100vw / 24) * 0.75);
-      align-items: center;
+      .profile-pet-name{
+
+        height: calc((100vw / 24) * 0.75);
+        line-height: calc((100vw / 24) * 0.75);
+        align-items: center;
+
+        margin-left: calc((100vw / 24) * 0.5);
+        font-weight: bold;
+
+        background-color: khaki;
+      }
+
+      .profile-pet-info{
+
+        margin-left: calc((100vw / 24) * 0.5);
+
+        background-color: lightcoral;
+
+        .profile-pet-info-text{
+
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .profile-bio{
+
+    width: calc((100vw / 24) * 5.5);
+    left: 0;
+    right: auto;
+
+    margin-top: calc((100vw / 24) * .5);
+
+    background-color: limegreen;
+  }
+
+  .profile-info{
+    
+    margin-top: calc((100vw / 24) * .2);
+    font-size: 14px;
+  }
+
+  .profile-bottom{
+
+    margin-top: calc((100vw / 24) * .5);
+
+    .btn{
+
+      width: calc((100vw / 24) * 1.5);
     }
   }
 
