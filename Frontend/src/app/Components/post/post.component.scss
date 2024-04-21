@@ -19,14 +19,29 @@ $unit-size: 75px;
 
         height: calc(100vw / 24);
 
-        margin-top: calc((100vw / 24) / 3);
-        margin-bottom: calc((100vw / 24) / 3);
+        margin-top: calc((100vw / 24) * .5);
+        margin-bottom: calc((100vw / 24) * .25);
 
         .post-profile-photo{
 
-            background: gray;
-            width: calc(100vw / 24);
+            //cor
+            // background: gray;
+            width: calc((100vw / 24) * 1.2);
             height: calc(100vw / 24);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .post-user-photo-image{
+
+                width: calc((100vw / 24) * .9);
+                height: calc((100vw / 24) * .9);
+                border-radius: 15%;
+                // position: absolute;
+                // vertical-align: middle;
+                // margin: auto;
+            }
         }
 
         .post-name{
@@ -56,8 +71,10 @@ $unit-size: 75px;
         }
 
         .post-options{
-            background: gray;
-            width: calc(100vw / 24);
+
+            //cor
+            // background: gray;
+            width: calc((100vw / 24) * 1.2);
             height: calc(100vw / 24);
         }
     }
@@ -72,38 +89,103 @@ $unit-size: 75px;
 
         width: calc((100vw / 24) * 8);
         height: calc((100vw / 24) * 6);
-        border: 2px solid gray;
+        margin-top: calc((100vw / 24) * .1);
+        // border: 2px solid gray;
+        // padding: 1px;
+        // border-radius: calc(((100vw / 24) * 6) * .03);
+
+        .post-image-image{
+
+            width: calc((100vw / 24) * 8);
+            height: calc((100vw / 24) * 6);
+            border-radius: calc(((100vw / 24) * 6) * .03);
+            border: 2px solid gray;
+        }
     }
 
     .post-bottom{
 
         width: calc((100vw / 24) * 8);
-        height: calc(100vw / 24);
+        height: calc((100vw / 24) * 1.2);
         padding-top: calc((100vw / 24) / 9);
         padding-bottom: calc((100vw / 24) / 9);
         margin-bottom: calc((100vw / 24) * 0.5);;
 
-        background: gray;
 
         display: flex;
         align-items: right;
         flex-direction: row;
         justify-content: right;
 
-        .post-button{
+        .post-bottom-left{
 
-            cursor: pointer;
-            // padding: 12px 35px;
-            width: calc((100vw / 24) * 0.9);
-            height: calc((100vw / 24) / 3);
-            margin-right: calc((100vw / 24) * 0.05);
-            margin-left: calc((100vw / 24) * 0.05);
-            outline: none;
-            background-color: transparent;
-            border: none;
+            width: calc((100vw / 24) * 7);
+            height: calc((100vw / 24) * 1.2);
+            align-content: center;
 
-            .like{
-              font-size: 30PX;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            
+            //cor
+            // background: gray;
+            
+            display: flex;
+            align-items: start;
+            justify-items: center;
+            flex-direction: row;
+            // align-content: center;
+            // justify-content: center;
+
+            .post-comment-text{
+
+                resize: none;
+                overflow: hidden;
+
+                line-height: calc((100vw / 24) * .5);
+
+                width: calc((100vw / 24) * 5.7);
+                height: calc((100vw / 24));
+
+                margin-top: calc((100vw / 24) * .1);
+                margin-left: calc((100vw / 24) * .1);
+                margin-right: calc((100vw / 24) * .1);
+                // margin: calc((100vw / 24) * .2) calc((100vw / 24) * .05) calc((100vw / 24) * .2) calc((100vw / 24) * .1);
+            }
+
+            .post-comment-button-send{
+
+                width: calc((100vw / 24) * 1);
+                height: calc((100vw / 24) * .5);
+
+                margin-top: calc((100vw / 24) * .1);
+                margin-right: calc((100vw / 24) * .1);
+                // margin: calc((100vw / 24) * .2) calc((100vw / 24) * .2) calc((100vw / 24) * .2) calc((100vw / 24) * .0);
+                // top: 0;
+                // bottom: auto;
+            }
+        }
+
+        .post-bottom-right{
+
+            width: calc((100vw / 24) * 1);
+
+            .post-button{
+
+                cursor: pointer;
+                // padding: 12px 35px;
+                width: calc((100vw / 24) * 0.9);
+                height: calc((100vw / 24) / 3);
+                margin-right: calc((100vw / 24) * 0.05);
+                margin-left: calc((100vw / 24) * 0.05);
+                outline: none;
+                background-color: transparent;
+                border: none;
+
+                .like{
+
+                    font-size: 30PX;
+                }
             }
         }
     }
@@ -114,5 +196,7 @@ $unit-size: 75px;
         padding: 0%;
         border: 2px solid gray;
         margin: 0;
+
+        border-radius: 1px;
     }
 }
