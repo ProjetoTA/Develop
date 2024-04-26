@@ -1,0 +1,90 @@
+
+.new-post-main{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: calc((100vw / 24) * .5);
+
+    .new-post-message{
+
+        textarea{
+
+            resize: none;
+            overflow: hidden;
+            width: calc((100vw / 24) * 8);
+            min-height: 50px;
+
+            // display: inline-block;
+            // margin-top: calc((100vw / 24) / 3);
+            // width: calc((100vw / 24) * 8);
+            // // height: calc((100vw / 24) * .5);
+            // left: auto;
+            // right: auto;
+
+            // resize: vertical;
+            // overflow: hidden;
+        }
+    }
+
+    .new-post-buttons{
+
+        width: calc((100vw / 24) * 8);
+        height: calc(100vw / 24);
+        padding-top: calc((100vw / 24) / 9);
+        padding-bottom: calc((100vw / 24) / 9);
+        margin-bottom: calc((100vw / 24) * 0.5);;
+
+        //cor
+        // background: gray;
+
+        display: flex;
+        align-items: right;
+        flex-direction: row;
+        justify-content: right;
+
+        .button{
+
+            cursor: pointer;
+            // padding: 12px 35px;
+            width: calc((100vw / 24) * 0.9);
+            height: calc((100vw / 24) / 3);
+            margin-right: calc((100vw / 24) * 0.05);
+            margin-left: calc((100vw / 24) * 0.05);
+            outline: none;
+            background-color: transparent;
+            border: none;
+
+            // .like{
+            //   font-size: 30PX;
+            // }
+        }
+        
+        // display: flex;
+        // justify-content: end;
+        // flex-direction: row;
+
+        // width: calc((100vw / 24) * 8);
+        // min-height: calc((100vw / 24) * .5);
+
+        // background-color: green;
+
+        // button{
+
+        //     width: calc((100vw / 24) * 0.9);
+        //     height: calc((100vw / 24) / 3);
+        //     margin-right: calc((100vw / 24) * 0.05);
+        //     margin-left: calc((100vw / 24) * 0.05);
+        // }
+    }
+
+    .post-line{
+
+        width: calc((100vw / 24) * 12);
+        padding: 0%;
+        border: 2px solid gray;
+        margin: 0;
+    }
+}
