@@ -206,10 +206,17 @@
   .profile-bottom{
 
     // margin-top: calc((100vw / 24) * .5);
+    // width: calc((100vw / 24) * 4);
+
+    display: flex;
+    align-items: start;
+    justify-content: end;
 
     .btn{
 
       width: calc((100vw / 24) * 1.5);
+
+      margin-right: calc((100vw / 24) * .25);
     }
   }
 
