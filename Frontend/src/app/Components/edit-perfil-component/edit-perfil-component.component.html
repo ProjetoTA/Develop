@@ -1,1 +1,24 @@
-<p>edit-perfil-component works!</p>
+<!-- In your component.html -->
+<button (click)="openEditModal()">Edit User</button>
+
+<div class="modal">
+  <div class="modal-content bg-light ">
+    <div class="header w-100 text-light bg-primary">
+      <span (click)="closeEditModal()" class="close mb-1">&times;</span>
+      <p class="modal-title p-2 ps-3 ">Edit User</p>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" name="name" class="form-input">
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email"  name="email" class="form-input">
+      </div>
+
+      <button type="submit" class="btn">Save Changes</button>
+    </form>
+  </div>
+</div>

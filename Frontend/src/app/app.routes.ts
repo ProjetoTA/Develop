@@ -8,7 +8,7 @@ import { EditPerfilComponentComponent } from './Components/edit-perfil-component
 
 export const routes: Routes = [
      { path: 'cadUsu', component:CadUsuarioComponentComponent },
-     { path: 'feed', component: FeedComponentComponent },
+     { path: 'feed', component: EditPerfilComponentComponent },
      { path: '', component: LoginComponentComponent },
      { path: 'perfil', component:PerfilComponentComponent  },
      { path: 'Cadpet', component: CadPetComponentComponent },
