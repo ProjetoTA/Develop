@@ -4,12 +4,13 @@ import { Component } from '@angular/core';
 import { PostComponent } from '../post/post.component';
 import { MenuRoutComponentComponent } from '../menu-rout-component/menu-rout-component.component';
 import { PerfilComponentComponent } from '../perfil-component/perfil-component.component';
+import { NewPostComponentComponent } from '../new-post-component/new-post-component.component';
 
 
 @Component({
   selector: 'app-feed-component',
   standalone: true,
-  imports: [NgbModalModule, PostComponent, MenuRoutComponentComponent,PerfilComponentComponent],
+  imports: [NgbModalModule, PostComponent, MenuRoutComponentComponent,PerfilComponentComponent, NewPostComponentComponent],
   templateUrl: './feed-component.component.html',
   styleUrl: './feed-component.component.scss'
 })
