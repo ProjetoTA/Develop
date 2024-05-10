@@ -15,7 +15,9 @@
             resize: none;
             overflow: hidden;
             width: calc((100vw / 24) * 8);
-            min-height: 50px;
+            min-height: 75px;
+
+            border-radius: calc(((100vw / 24) * 6) * .015);
 
             // display: inline-block;
             // margin-top: calc((100vw / 24) / 3);
@@ -35,7 +37,7 @@
         height: calc(100vw / 24);
         padding-top: calc((100vw / 24) / 9);
         padding-bottom: calc((100vw / 24) / 9);
-        margin-bottom: calc((100vw / 24) * 0.5);;
+        margin-bottom: calc((100vw / 24) * 0.5);
 
         //cor
         // background: gray;
@@ -45,21 +47,44 @@
         flex-direction: row;
         justify-content: right;
 
-        .button{
+        button{
 
             cursor: pointer;
             // padding: 12px 35px;
-            width: calc((100vw / 24) * 0.9);
-            height: calc((100vw / 24) / 3);
-            margin-right: calc((100vw / 24) * 0.05);
-            margin-left: calc((100vw / 24) * 0.05);
-            outline: none;
-            background-color: transparent;
-            border: none;
+            min-width: calc((100vw / 24) * 1);
+            height: calc((100vw / 24) / 1.5);
+            // margin-right: calc((100vw / 24) * 0.05);
+            margin-left: calc((100vw / 24) * 0.1);
+        
+            border-radius: calc(((100vw / 24) * 6) * .01);
+
+            background-color: #f0ecf8;
+            // color: #282631;
+            color: #967ace;
+            // border-color: gray;
+            border-color: #967ace;
+            // font-weight: bold;
+
+            // outline: none;
+            // background-color: transparent;
+            // border: none;
 
             // .like{
             //   font-size: 30PX;
             // }
+        }
+
+        button:hover{
+
+            background-color: #aa8be5;
+            color: white;
+        }
+
+        button:active{
+
+            background-color: rgb(242, 242, 242);
+            color: #967ace;
+            // color:#282631;
         }
         
         // display: flex;
