@@ -218,6 +218,47 @@
 
       margin-right: calc((100vw / 24) * .25);
     }
+    
+    button{
+
+      cursor: pointer;
+      // padding: 12px 35px;
+      min-width: calc((100vw / 24) * 1);
+      height: calc((100vw / 24) / 1.5);
+      // margin-right: calc((100vw / 24) * 0.05);
+      margin-right: calc((100vw / 24) * 0.1);
+  
+      border-radius: calc(((100vw / 24) * 6) * .01);
+
+      background-color: #f0ecf8;
+      // color: #282631;
+      color: #967ace;
+      // border-color: gray;
+      border-color: #967ace;
+      // font-weight: bold;
+
+      // outline: none;
+      // background-color: transparent;
+      // border: none;
+
+      // .like{
+      //   font-size: 30PX;
+      // }
+    }
+
+    button:hover{
+
+      background-color: #aa8be5;
+      color: white;
+    }
+
+    button:active{
+
+        background-color: rgb(242, 242, 242);
+        color: #967ace;
+        // color:#282631;
+    }
+
   }
 
 }

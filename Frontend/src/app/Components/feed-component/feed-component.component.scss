@@ -22,31 +22,14 @@
         align-content: start;
 
         // cor
-        // background: gray;
-        background-color: #edeaed;
+        // background-color: #edeaed;
+        background-color: #ede8f9;
 
-        // justify-content: center;
-
-        // position: absolute;
-        // top: 0px; /* Header Height */
-        // bottom: 0px; /* Footer Height */
-        // left: 0px;
-        // height: 100%;
         margin: 0;
         padding: 0;
-        // width: 100%;
 
-        // position: relative;
-
-        border-right: 3px solid gray;
-
-        // .feed-profile{
-        //     display: flex;
-        //     background: white;
-        //     margin-left: calc((100% / 8) * 1.5);
-        //     margin-top: 75px;
-        //     width: calc((100% / 8) * 6.5);
-        // }
+        // border-right: 3px solid gray;
+        border-right: 3px solid #edeaed;
     }
 
     .feed-feed{
