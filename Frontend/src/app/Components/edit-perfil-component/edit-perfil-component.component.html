@@ -1,5 +1,5 @@
 <!-- In your component.html -->
-<button (click)="openEditModal()">Edit User</button>
+<button class="btn btn-outline-primary" (click)="openEditModal()">Edit User</button>
 
 <div class="modal">
   <div class="modal-content bg-light ">
@@ -8,17 +8,25 @@
       <p class="modal-title p-2 ps-3 ">Edit User</p>
     </div>
     <form>
-      <div class="form-group">
-        <label for="name" class="form-label">Name:</label>
-        <input type="text" id="name" name="name" class="form-input">
+      <div class="form-group bg-light">
+        <label>
+          <span class="ms-1 text-primary">Nome completo</span>
+          <input class="input mt-2" type="text" placeholder="" value="Jennifer Lima" required="" />
+        </label>
+        <br>
+        <label>
+          <span class="ms-1 text-primary">Usuário</span>
+          <input class="input mt-2" type="text" placeholder="" value="@Limaaa_Jennifer" required="" />
+        </label>
+        <br>
+        <label>
+          <span class="ms-1 text-primary">E-mail</span>
+          <input class="input mt-2" type="email" placeholder="" value="jenniferls0@gmail.com" required="" />
+        </label>
+        <br>
+        <br>
+        <button class="btn btn-primary text-light">Alterar</button>
       </div>
-
-      <div class="form-group">
-        <label for="email" class="form-label">Email:</label>
-        <input type="email" id="email"  name="email" class="form-input">
-      </div>
-
-      <button type="submit" class="btn">Save Changes</button>
     </form>
   </div>
 </div>
