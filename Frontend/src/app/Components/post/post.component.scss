@@ -192,12 +192,25 @@ $unit-size: 75px;
                 // .like{
                 //   font-size: 30PX;
                 // }
+                .button-image{
+
+                    width: 95%;
+                    height: 95%;
+
+                    object-fit: contain;
+
+                    filter: brightness(0) saturate(100%) invert(55%) sepia(43%) saturate(492%) hue-rotate(219deg) brightness(87%) contrast(90%);
+                }
             }
     
             button:hover{
     
                 background-color: #aa8be5;
                 color: white;
+
+                .button-image{
+                    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(256deg) brightness(105%) contrast(105%);
+                }
             }
     
             button:active{
@@ -205,6 +218,10 @@ $unit-size: 75px;
                 background-color: rgb(242, 242, 242);
                 color: #967ace;
                 // color:#282631;
+
+                .button-image{
+                    filter: brightness(0) saturate(100%) invert(55%) sepia(43%) saturate(492%) hue-rotate(219deg) brightness(87%) contrast(90%);
+                }
             }
         }
 
