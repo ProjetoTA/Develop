@@ -16,7 +16,7 @@
             overflow: hidden;
             width: calc((100vw / 24) * 8);
             min-height: 75px;
-
+            outline: none;
             border-radius: calc(((100vw / 24) * 6) * .015);
 
             // display: inline-block;
@@ -55,7 +55,7 @@
             height: calc((100vw / 24) / 1.5);
             // margin-right: calc((100vw / 24) * 0.05);
             margin-left: calc((100vw / 24) * 0.1);
-        
+
             border-radius: calc(((100vw / 24) * 6) * .01);
 
             background-color: #f0ecf8;
