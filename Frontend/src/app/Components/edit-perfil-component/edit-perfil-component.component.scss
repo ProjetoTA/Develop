@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family:'Montserrat';
+  z-index: 300;
+}
+
+.form-group{
+  background-color: #fffcfc;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.25s, opacity 0.25s linear;
+}
+
+.header{
+  padding: 0;
+}
+
+.modal-content {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal.show {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 0.25s linear;
+}
+
+.close {
+  position: absolute;
+  top: 6px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+form {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  color: #1a1a1a;
+  font-family: Montserrat;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.signin {
+  text-align: center;
+}
+
+a:hover {
+  text-decoration: underline #1a1a1a
+}
+
+ a {
+  color: #1a1a1a;
+}
+
+label {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  background-color: transparent;
+  color: #1a1a1a;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid #1a1a1a;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.input + span {
+  color: #1a1a1a;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.input:placeholder-shown + span {
+  top: 13px;
+  font-size: 0.9em;
+}
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: #00bfff;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+

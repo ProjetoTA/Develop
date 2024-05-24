@@ -7,6 +7,7 @@ $unit-size: 75px;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+
     // background: red;
     // margin-left: 33%;
 
@@ -126,10 +127,10 @@ $unit-size: 75px;
             padding: 0;
             border: 0;
             margin: 0;
-            
+
             //cor
             // background: gray;
-            
+
             display: flex;
             align-items: start;
             justify-items: center;
@@ -151,7 +152,7 @@ $unit-size: 75px;
                 margin-left: calc((100vw / 24) * .1);
                 margin-right: calc((100vw / 24) * .1);
                 // margin: calc((100vw / 24) * .2) calc((100vw / 24) * .05) calc((100vw / 24) * .2) calc((100vw / 24) * .1);
-                
+
                 border-radius: calc(((100vw / 24) * 6) * .015);
             }
 
@@ -175,20 +176,13 @@ $unit-size: 75px;
                 // height: calc((100vw / 24) / 1.5);
                 // margin-right: calc((100vw / 24) * 0.05);
                 margin-left: calc((100vw / 24) * 0.1);
-            
+
                 border-radius: calc(((100vw / 24) * 6) * .01);
-    
-                background-color: #f0ecf8;
-                // color: #282631;
-                color: #967ace;
-                // border-color: gray;
-                border-color: #967ace;
-                // font-weight: bold;
-    
+
                 // outline: none;
                 // background-color: transparent;
                 // border: none;
-    
+
                 // .like{
                 //   font-size: 30PX;
                 // }
@@ -202,7 +196,7 @@ $unit-size: 75px;
                     filter: brightness(0) saturate(100%) invert(55%) sepia(43%) saturate(492%) hue-rotate(219deg) brightness(87%) contrast(90%);
                 }
             }
-    
+
             button:hover{
     
                 background-color: #aa8be5;

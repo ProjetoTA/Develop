@@ -3,9 +3,9 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { MenuRoutComponentComponent } from './Components/menu-rout-component/menu-rout-component.component';
 import { CadUsuarioComponentComponent } from './Components/cad-usuario-component/cad-usuario-component.component';
 import { FeedComponentComponent } from './Components/feed-component/feed-component.component';
-import { CadSucessoComponenteComponent } from './Components/cad-sucesso-componente/cad-sucesso-componente.component';
 import { PerfilComponentComponent } from './Components/perfil-component/perfil-component.component';
 import { LoginComponentComponent } from './Components/login-component/login-component.component';
+import { EditPerfilComponentComponent } from './Components/edit-perfil-component/edit-perfil-component.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ import { LoginComponentComponent } from './Components/login-component/login-comp
   MenuRoutComponentComponent,
   CadUsuarioComponentComponent,
   FeedComponentComponent,
-  CadSucessoComponenteComponent,
+  EditPerfilComponentComponent,
   PerfilComponentComponent,
   LoginComponentComponent,
   RouterOutlet,
