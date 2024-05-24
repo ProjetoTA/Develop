@@ -214,7 +214,7 @@
 
     .btn{
 
-      width: calc((100vw / 24) * 1.5);
+      // width: calc((100vw / 24) * 1.5);
 
       margin-right: calc((100vw / 24) * .25);
     }
@@ -223,8 +223,9 @@
 
       cursor: pointer;
       // padding: 12px 35px;
-      min-width: calc((100vw / 24) * 1);
-      height: calc((100vw / 24) / 1.5);
+      // min-width: calc((100vw / 24) * 1);
+      width: calc((100vw / 24) * .75);
+      height: calc((100vw / 24) * .75);
       // margin-right: calc((100vw / 24) * 0.05);
       margin-right: calc((100vw / 24) * 0.1);
   
@@ -244,12 +245,28 @@
       // .like{
       //   font-size: 30PX;
       // }
+
+      .button-image{
+
+        width: 95%;
+        height: 95%;
+
+        object-fit: contain;
+
+        filter: brightness(0) saturate(100%) invert(55%) sepia(43%) saturate(492%) hue-rotate(219deg) brightness(87%) contrast(90%);
+      }
+
     }
 
     button:hover{
 
       background-color: #aa8be5;
       color: white;
+      
+      .button-image{
+
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(256deg) brightness(105%) contrast(105%);
+      }
     }
 
     button:active{
@@ -257,6 +274,11 @@
         background-color: rgb(242, 242, 242);
         color: #967ace;
         // color:#282631;
+
+        .button-image{
+
+          filter: brightness(0) saturate(100%) invert(55%) sepia(43%) saturate(492%) hue-rotate(219deg) brightness(87%) contrast(90%);
+        }
     }
 
   }
